@@ -1,0 +1,1204 @@
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
+<!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-M3V5DDDQ"
+    height="0"
+    width="0"
+    style="display: none; visibility: hidden"></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="progressLoader">
+
+<img src="assets/loader.gif"/>
+
+</div>
+
+<div id="progressScreen" class="bg-progress">
+  <div class="top-logo col-100">
+    <img
+      src="assets/uiAssets/images/goldLacto.png"
+      class="wow animate__zoomIn"
+      data-wow-duration="1000ms"
+      data-wow-delay="100ms"
+      width="216"
+      height="156" />
+  </div>
+  <div class="bottom-avatar col-100">
+    <img src="assets/textures/04_eyebrow_change_2.png" width="204" height="204" />
+  </div>
+  <div class="progressdiv col-100">
+    <div class="progress progress-striped" id="progress-container">
+      <div role="progressbar" class="progressbar" id="progress-bar"></div>
+    </div>
+    <h4 id="loading-text">Loading...</h4>
+  </div>
+</div>
+<!-- splash screen -->
+<div id="splashimage">
+  <!-- <img id="" class="center-Obj" src="./assets/textures/scrn-1Bg-ftr-a.png" />
+  <img id="" class="center-Obj" src="./assets/textures/scrn-1Bg-ftr-b.png" /> -->
+  <img id="loadbg" class="center-Obj" src="./assets/textures/bg2x.png" />
+  <img id="loadLogo" src="./assets/textures/logo.png" style="z-index: 5" />
+  <img
+    id="loadfg"
+    class="center-Obj"
+    src="./assets/textures/newEyebrow-Front.png"
+    style="z-index: 4; top: 55%" />
+  <!-- <div style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%)">
+    <div id="bar" class="spinner"></div>
+  </div> -->
+  <img
+    id="lg-poweredby"
+    src="https://cdn.glitch.global/a9d7e03a-1f4f-4751-9ea0-b1ed9029613b/download.svg?v=1687969108417" />
+</div>
+
+<!-- Instruction screen -->
+<div id="instructionScreen" class="bg-instuctions">
+  <!-- Instruction page 1 Starts -->
+  <div class="instructions1">
+    <div class="newinst col-100">
+      <div class="banner-margin">
+        <img src="assets/uiAssets/images/instruction-bnr11.png" class="top-new" alt="Banner" />
+        <div class="text-overlap">
+          <div class="bnr-new-text">
+            <h2 class="wow animate__fadeInLeft" data-wow-duration="1000ms" data-wow-delay="200ms">
+              Cara Bermain
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-instructions col-100">
+      <ul>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="1000ms">
+          <img
+            src="assets/uiAssets/images/arrow-right.png"
+            width="30"
+            height="30"
+            alt="Arrow right" />Tap panah kanan untuk gerak ke kanan
+        </li>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="1200ms">
+          <img
+            src="assets/uiAssets/images/arrow-left.png"
+            width="30"
+            height="30"
+            alt="Arrow Left" />Tap panah kiri untuk gerak ke kiri
+        </li>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="1400ms">
+          <img src="assets/uiAssets/images/arrow-up.png" width="30" height="30" alt="Arrow up" />
+          Ketuk panah untuk melompati halangan dan rintangan
+        </li>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="1600ms">
+          <img src="assets/uiAssets/images/shield1.png" width="30" height="32" alt="Shield" />
+          Kumpulkan Boost <span class="text-orange">L. Reuteri</span> untuk tambah kecepatan dan
+          bergerak lebih jauh.
+        </li>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="1800ms">
+          <img src="assets/uiAssets/images/shield2.png" width="30" height="32" alt="Shield" />
+          Kumpulkan Fokus <span class="text-orange">Omega 3 &amp; 6</span> untuk kurangi kecepatan.
+        </li>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="2000ms">
+          <img src="assets/uiAssets/images/shield3.png" width="30" height="32" alt="Shield" />
+          Kumpulkan <span class="text-orange">Perisai Vitamin & Mineral</span> agar kebal dari
+          rintangan
+        </li>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="2200ms">
+          <img src="assets/uiAssets/images/shield4.png" width="30" height="32" alt="Shield" />
+          Kumpulkan <span class="text-orange">Boost Energi Inulin</span> untuk tambah energi dan
+          kemampuan
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-btn col-100">
+      <div
+        class="bnr-row justify-content-center wow animate__fadeInUp"
+        data-wow-duration="1000ms"
+        data-wow-delay="2500ms">
+        <div class="col-50" id="skipButton">
+          <button class="btn green-gradient-btn">Skip</button>
+        </div>
+        <div class="col-50" id="readMoreButton">
+          <button class="btn red-gradient-btn">SELANJUTNYA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Instruction page 1 Ends -->
+  <!-- Instruction page 2 Starts -->
+  <div class="instructions2">
+    <div class="newinst col-100">
+      <div class="banner-margin">
+        <img src="assets/uiAssets/images/instruction-bnr22.png" class="top-new" alt="Banner" />
+        <div class="text-overlap">
+          <div class="bnr-new-text">
+            <h2 class="wow animate__fadeInLeft" data-wow-duration="1000ms" data-wow-delay="200ms">
+              Cara Dapat Poin
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-instructions col-100">
+      <ul>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="1000ms">
+          <img
+            src="assets/uiAssets/images/level-up-popup.png"
+            width="30"
+            height="33"
+            alt="Arrow right" />
+          <strong>Token</strong>:<br />Dapatkan <span class="text-orange">skor 100</span> setiap
+          mengumpulkan token Lactogrow. Token ini tersebar di sepanjang permainan
+        </li>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="1200ms">
+          <img src="assets/uiAssets/images/shield6.png" width="30" height="33" alt="Arrow Left" />
+          <strong>Jarak Tempuh</strong><br />Dapatkan
+          <span class="text-orange">skor 100</span> setiap melewati
+          <span class="text-orange">100 meter</span>. Berusahalah berlai sejauh-jauhnya!
+        </li>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="1400ms">
+          <img src="assets/textures/domino_100X100.png" width="30" height="30" alt="Arrow up" />
+          <strong>Domino</strong><br />Dapatkan <span class="text-orange">skor 400</span> setiap
+          mengumpulkan Domino.
+        </li>
+        <li class="wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="1600ms">
+          <img src="assets/uiAssets/images/shield3.png" width="30" height="33" alt="Shield" />
+          <strong>Power-Up</strong><br />Dapatkan <span class="text-orange">skor 200</span> setiap
+          mengumpukan Power-Up.
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-btn col-100">
+      <div
+        class="bnr-row justify-content-center wow animate__fadeInUp"
+        data-wow-duration="1000ms"
+        data-wow-delay="1800ms">
+        <div class="col-50">
+          <button class="btn red-gradient-btn" id="acceptButton">SELANJUTNYA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Instruction page 2 Ends -->
+</div>
+<!-- scan guide screen -->
+<!-- scan info Starts -->
+<div id="scanInfo" class="scaninfopage">
+  <div class="top-bnr col-100">
+    <div class="bnr-row">
+      <div class="bnr-text-col">
+        <h2 class="wow animate__fadeInLeft" data-wow-duration="1000ms" data-wow-delay="250ms">
+          Cara Scan?
+        </h2>
+      </div>
+      <div class="bnr-img-col">
+        <div class="wow animate__fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <img
+            src="assets/uiAssets/images/scan-info-avatar.png"
+            width="66"
+            height="143"
+            class="img-top" />
+          <img
+            src="assets/uiAssets/images/confused-question.png"
+            width="50"
+            height="44"
+            class="qusetion-con" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-instructions col-100 text-center">
+    <video
+      src="assets/uiAssets/videos/video-ins2.mp4"
+      muted
+      autoplay
+      loop
+      playsinline
+      class="video-controls"></video>
+  </div>
+  <div class="bottom-btn col-100">
+    <div
+      class="bnr-row justify-content-center wow animate__fadeInUp"
+      data-wow-duration="1000ms"
+      data-wow-delay="1000ms">
+      <div class="col-100">
+        <label class="custom-checkbox" id="agreeLabel"
+          >Saya berumur 18 tahun ke atas dan saya telah membaca dan menerima
+          <a href="javascript:void(0)">syarat dan ketentuan</a>.
+          <input type="checkbox" id="agreeCheckbox" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="col-100">
+        <label class="custom-checkbox" id="agreeLabel2"
+          >Saya memberikan persetujuan kepada PT Nestlé Indonesia dan afiliasinya (“Nestlé”) untuk
+          memproses data pribadi saya dengan mengacu pada
+          <a href="javascript:void(0)">Kebijakan Kerahasiaan Lactogrow</a>. Saya dapat menarik
+          persetujuan saya kapan saja.
+          <input type="checkbox" id="agreeCheckbox2" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="col-50">
+        <button class="btn red-gradient-btn" id="startScanButton">MULAI</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- scan error page -->
+<div id="scanPage" class="scanscreen" style="z-index: 5">
+  <img
+    src="assets/uiAssets/images/balloon-yellow.png"
+    width="43"
+    height="68"
+    class="anime-balloon-left" />
+  <img
+    src="assets/uiAssets/images/balloon-yellow.png"
+    width="60"
+    height="94"
+    class="anime-balloon-right" />
+  <div class="avatar-top">
+    <div class="img-avatar wow animate__zoomIn" data-wow-duration="1000ms" data-wow-delay="200ms">
+      <img src="assets/uiAssets/images/scan-avatar.png" width="130" height="265" alt="Shield" />
+    </div>
+    <div class="circle" style="animation-delay: -3s"></div>
+    <div class="circle" style="animation-delay: -2s"></div>
+    <div class="circle" style="animation-delay: -1s"></div>
+    <div class="circle" style="animation-delay: 0s"></div>
+  </div>
+  <div class="cardbottom">
+    <div
+      class="contentshield wow animate__fadeInUp"
+      data-wow-duration="1000ms"
+      data-wow-delay="500ms">
+      <img src="assets/uiAssets/images/bottom-scan-shield.png" width="284" height="310" />
+      <div class="text-inside">
+        <h2>Tidak bisa scan?</h2>
+        <button class="btn golden-gradient-btn" id="helpButton">Butuh bantuan?</button>
+        <div class="v-align">
+          <div class="hero-btn">
+            <button class="btn red-gradient-btn btn-animate" id="startButton">Scan lagi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- game screen -->
+<!-- <div id="startScreen" class="start-screen" style="align-content: flex-end">
+  <img id="scnImg" src="assets/textures/scnFg.png" />
+  <div class="top-timer" style="display: none">
+    <div class="timer-inner">
+      <img src="assets/uiAssets/images/polygon-shape.png" width="195" height="195" />
+      <div class="rounded-timer">
+        <p class="timer" id="timer">3</p>
+      </div>
+    </div>
+  </div>
+  <div id="goBtn" class="bottom-start" style="margin-bottom: 50px">
+    <button class="btn blue-gradient-btn" id="startGame">lacto go</button>
+  </div>
+</div> -->
+<div id="startScreen" class="start-screen pd-20" style="justify-content: center">
+  <img id="scnImg" src="assets/textures/scnFg.png" />
+  <div class="top-timer" style="display: none">
+    <div class="timer-inner">
+      <img
+        src="assets/uiAssets/images/polygon-shape.png"
+        width="195"
+        height="195"
+        class="rotating-img" />
+      <div class="rounded-timer">
+        <p class="timer" id="timer">3</p>
+      </div>
+      <i class="star-timer star-1"></i>
+      <i class="star-timer star-2"></i>
+    </div>
+  </div>
+  <div
+    id="goBtn"
+    class="bottom-start"
+    style="
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; 
+    display:none;opacity:0;">
+    <button class="btn blue-gradient-btn" id="startGame">lacto go</button>
+  </div>
+</div>
+<!-- <div id="goBtn" style="display: ">Lacto GO!</div> -->
+<!-- GameStarts screen starts-->
+<div id="gameScreen" class="start-screen selectDisable" style="z-index: 5">
+    <div class="nav-top col-100 pd-20">
+    <div class="nav-row">
+      <div class="nav-col">
+        <div class="score-box">
+          <div class="poly-bg quadrado">
+            <img src="assets/uiAssets/images/star.png" width="31" height="34" />
+          </div>
+          <div class="bordered-score" style="background-color: #004ea8">
+            <p id="score-count">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-col text-center bg-blue pdy-8">
+        <img
+          src="assets/uiAssets/images/lactoGo-goldenLogo.png"
+          width="86"
+          height="61"
+          alt="Lacto go"
+          class="img-fluid" />
+      </div>
+      <div class="nav-col">
+        <div class="score-box">
+          <div class="poly-bg">
+            <img id="heartImg" src="assets/uiAssets/images/heart-red.png" width="31" height="34" />
+          </div>
+          <div class="bordered-score">
+            <div class="bar-power">
+              <div class="bar-progress"></div>
+              <p class="" id="health">100%</p>
+            </div>
+          </div>
+        </div>
+        <div class="score-box" style="display: none">
+          <div class="poly-bg">
+            <img src="assets/uiAssets/images/location.png" width="31" height="34" />
+          </div>
+          <div class="bordered-score" style="background-color: #004ea8">
+            <p id="distance">0 M</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-full">
+        <div class="notification-buttons">
+          <button class="notice-button" id="returiNotif">
+            <img src="assets/uiAssets/images/shield1.png" width="24" height="26" />
+            <span>0</span>
+          </button>
+          <button class="notice-button"  id="focusNotif">
+            <img src="assets/uiAssets/images/shield2.png" width="24" height="26" />
+            <span>0</span>
+          </button>
+          <button class="notice-button" id="dominoNotif">
+            <img src="assets/uiAssets/images/shield7.png" width="24" height="26" />
+            <span>0</span>
+          </button>
+          <button class="notice-button" id="shieldNotif">
+            <img src="assets/uiAssets/images/shield3.png" width="24" height="26" />
+            <span>0</span>
+          </button>
+          <button class="notice-button" id="proteinNotif">
+            <img src="assets/uiAssets/images/shield4.png" width="24" height="26" />
+            <span>0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- game controller -->
+  <div class="bottom-arrows col-100" style="padding-bottom: 10px">
+    <div class="inner-btns justify-content-center">
+      <button id="up" class="btn-arrow controlBtn modal-button">
+        <img src="assets/uiAssets/images/up-btn.png" width="73" height="79" />
+      </button>
+    </div>
+    <div class="inner-btns justify-content-space" style="padding: 0 25px">
+      <button id="left" class="btn-arrow controlBtn clickable">
+        <img src="assets/uiAssets/images/left-btn.png" width="73" height="79" />
+      </button>
+      <button id="right" class="btn-arrow controlBtn clickable">
+        <img src="assets/uiAssets/images/right-btn.png" width="73" height="79" />
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <img src="assets/uiAssets/images/popup-bg.png" class="popup-bg" />
+      <button class="close-btn close">
+        <img src="assets/uiAssets/images/close-icon.png" width="19" height="17" />
+      </button>
+      <div class="content-inside">
+        <div class="heading-popup">
+          <h2></h2>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- level change screen -->
+<div id="levelScreen" class="bg-level">
+  <div
+    style="margin-bottom: 100%"
+    class="levelup col-100 wow animate__zoomInDown"
+    data-wow-duration="1000ms"
+    data-wow-delay="300ms">
+    <!-- <img src="assets/uiAssets/images/popup-bg.png" width="170" height="186" class="vivek" /> -->
+    <div class="text-level">
+      <h2 class="text-blue">Level<br /><span id="lvlCount">2</span></h2>
+    </div>
+    <div class="night">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+  </div>
+</div>
+<!-- Game Page screen Ends-->
+<!-- Score Page Starts -->
+<div id="scoreScreen" class="score-screen">
+  <div class="top-score col-100">
+    <div class="trophy-top">
+      <div class="img-troph1">
+        <img src="assets/uiAssets/images/score-trophy.png" width="55" height="61" />
+      </div>
+      <div class="img-troph2">
+        <img src="assets/uiAssets/images/score-trophy.png" width="113" height="126" />
+      </div>
+      <div class="img-troph1">
+        <img src="assets/uiAssets/images/score-trophy.png" width="55" height="61" />
+      </div>
+    </div>
+    <h2>Skor Anda!</h2>
+  </div>
+  <div class="bottom-score col-100">
+    <div class="top-white">
+      <div class="circle-inside-score">
+        <div class="inside-blue">ST</div>
+      </div>
+      <div class="score-number">
+        <h2 id="finalScore-count">+750 Skor</h2>
+      </div>
+    </div>
+    <div class="score-num-box">
+      <div class="inside-pink">
+        <div class="icon-img">
+          <img
+            src="assets/uiAssets/images/score-location.png"
+            alt="location"
+            width="24"
+            height="27" />
+        </div>
+        <div class="text-score">
+          <h2>Jarak Tempuh</h2>
+        </div>
+      </div>
+      <div class="right-info">
+        <h3 id="distance-count">1800 m</h3>
+      </div>
+    </div>
+    <div class="score-num-box">
+      <div class="inside-pink">
+        <div class="icon-img">
+          <img src="assets/uiAssets/images/score-timer.png" alt="location" width="24" height="27" />
+        </div>
+        <div class="text-score">
+          <h2>Waktu Tempuh</h2>
+        </div>
+      </div>
+      <div class="right-info">
+        <h3 id="time-count">120 s</h3>
+      </div>
+    </div>
+    <div class="score-num-box">
+      <div class="inside-pink">
+        <div class="icon-img">
+          <img src="assets/uiAssets/images/score-star.png" alt="location" width="24" height="27" />
+        </div>
+        <div class="text-score">
+          <h2>Token yang Terkumpul</h2>
+        </div>
+      </div>
+      <div class="right-info">
+        <h3 id="token-count">22 T</h3>
+      </div>
+    </div>
+    <div class="button-score col-100">
+      <div class="btn-cont">
+        <button id="playAgainBtn" class="btn green-gradient-btn modal-button">Main lagi</button>
+        <button
+          id="shareScoreBtn"
+          class="btn blue-gradient-btn modal-button shareScore"
+          data-target="myModal4">
+          Bagikan Skor
+        </button>
+        <button id="subScoreBtn" class="btn golden-gradient-btn modal-button">Masukkan Skor</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="scoreScreenBlue" class="score-screen">
+  <div class="top-score col-100">
+    <div class="trophy-top">
+      <div class="img-troph1">
+        <img src="assets/uiAssets/images/score-trophy.png" width="55" height="61" />
+      </div>
+      <div class="img-troph2">
+        <img src="assets/uiAssets/images/score-trophy.png" width="113" height="126" />
+      </div>
+      <div class="img-troph1">
+        <img src="assets/uiAssets/images/score-trophy.png" width="55" height="61" />
+      </div>
+    </div>
+    <h2>Skor Anda!</h2>
+  </div>
+  <div class="bottom-score col-100">
+    <div class="top-white">
+      <div class="circle-inside-score">
+        <div class="inside-blue">ST</div>
+      </div>
+      <div class="score-number">
+        <h2>+750 Skor</h2>
+      </div>
+    </div>
+    <div class="blue-bg-pop">
+      <img src="assets/uiAssets/images/popup-bg.png" class="popup-bg" />
+      <button class="close-btn close">
+        <img src="assets/uiAssets/images/close-icon.png" width="19" height="17" />
+      </button>
+      <div class="content-inside">
+        <h2 class="score-info">Sepertinya Anda sudah pernah bermain game dan memiliki skor</h2>
+      </div>
+    </div>
+    <div class="bottom-score-pop">
+      <button class="btn golden-gradient-btn">Masuk</button>
+      <p>Belum pernah mendaftar? Klik di sini untuk daftar.</p>
+    </div>
+  </div>
+</div>
+<!-- Score Page Ends -->
+<!-- The Modal -->
+<div id="myModal2" class="modal goModal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <img src="assets/uiAssets/images/popup-bg.png" class="popup-bg" />
+      <button class="close-btn close">
+        <img src="assets/uiAssets/images/close-icon.png" width="19" height="17" />
+      </button>
+      <div class="content-inside">
+        <div class="btn-modal">
+          <button class="btn golden-gradient-btn" id="showScore">Masuk sekarang</button>
+          <h4 class="text-btns">atau</h4>
+          <button id="leaderBoardBtn" class="btn red-gradient-btn">Daftar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal -->
+<div id="myModal3" class="modal goModal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <img src="assets/uiAssets/images/popup-bg.png" class="popup-bg" />
+      <button class="close-btn close">
+        <img src="assets/uiAssets/images/close-icon.png" width="19" height="17" />
+      </button>
+      <div class="content-inside">
+        <div class="score-pop">
+          <h2>Total Skor</h2>
+          <h2 id="finalScore" class="text-yellow">xxx</h2>
+          <h2>Total Lactoclub Poin</h2>
+          <h2 id="finalClubScore" class="text-pink">xxx</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The Modal -->
+<div id="myModal4" class="modal goModal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <img src="assets/uiAssets/images/popup-bg-white.png" class="popup-bg" />
+      <button class="close-btn close">
+        <img src="assets/uiAssets/images/close-icon.png" width="19" height="17" />
+      </button>
+      <div class="content-inside">
+        <div class="share-pop">
+          <h3>Share via</h3>
+          <div id="shareContainer" class="bnr-row shareContainer">
+            <div class="col-social" name="facebook">
+              <a id="facebook-share" href="javascript:void(0)"
+                ><img src="assets/uiAssets/images/social-icons/facebook.png" width="38" height="38"
+              /></a>
+            </div>
+            <div class="col-social" name="twitter">
+              <a id="twitter-share" href="javascript:void(0)"
+                ><img src="assets/uiAssets/images/social-icons/twitter.png" width="38" height="38"
+              /></a>
+            </div>
+            <div class="col-social" name="whatsapp">
+              <a id="whatsapp-share" href="javascript:void(0)"
+                ><img src="assets/uiAssets/images/social-icons/whatsapp.png" width="38" height="38"
+              /></a>
+            </div>
+            <!--  <div class="col-social" name="youtube">
+              <a id="youtube-share" href="javascript:void(0)"
+                ><img src="assets/uiAssets/images/social-icons/youtube.png" width="38" height="38"
+              /></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   <div class="modal-footer">
+      <div class="share-footer">
+        <button class="btn blue-gradient-btn modal-button shareScore" data-target="myModal3">
+          Bagikan Skor
+        </button>
+      </div>
+    </div> -->
+  </div>
+</div>
+<!-- Error Page Starts -->
+<div id="errorScreen" class="score-screen">
+  <div class="top-score col-100">
+    <div class="trophy-top">
+      <div class="img-troph1">
+        <img src="assets/uiAssets/images/score-trophy.png" width="55" height="61" />
+      </div>
+      <div class="img-troph2">
+        <img src="assets/uiAssets/images/score-trophy.png" width="113" height="126" />
+      </div>
+      <div class="img-troph1">
+        <img src="assets/uiAssets/images/score-trophy.png" width="55" height="61" />
+      </div>
+    </div>
+    <h2>Skor Anda!</h2>
+  </div>
+  <div class="bottom-score col-100">
+    <div class="top-white">
+      <div class="circle-inside-score">
+        <div class="inside-blue">ST</div>
+      </div>
+      <div class="score-number">
+        <h2>+750 Skor</h2>
+      </div>
+    </div>
+
+    <div class="button-score col-100">
+      <div class="btn-cont">
+        <button class="btn green-gradient-btn err-modal-button" data-target="unauthorizedMessage">
+          Unauthorized
+        </button>
+        <button class="btn blue-gradient-btn err-modal-button" data-target="failedPoinMessage">
+          Failed Skor
+        </button>
+        <button class="btn golden-gradient-btn err-modal-button" data-target="failedtThreePoinMessage">
+          Failed 3x
+        </button>
+        <button class="btn golden-gradient-btn" id="congratsButton">Congratulations</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Unauthorized Modal -->
+<div id="unauthorizedMessage" class="err-modal modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <img src="assets/uiAssets/images/popup-bg.png" class="popup-bg" />
+      <button class="close-btn close">
+        <img src="assets/uiAssets/images/close-icon.png" width="19" height="17" />
+      </button>
+      <div class="content-error">
+        <p>Mohon untuk Login atau Register terlebih dahulu.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Failed Point Modal -->
+<div id="failedPoinMessage" class="err-modal modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <img src="assets/uiAssets/images/popup-bg.png" class="popup-bg" />
+      <button class="close-btn close">
+        <img src="assets/uiAssets/images/close-icon.png" width="19" height="17" />
+      </button>
+      <div class="content-error">
+        <p>Sedang terjadi kesalahan pada sistem kami. Mohon coba kembali.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Failed 3 Point Modal -->
+<div id="failedtThreePoinMessage" class="err-modal modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+      <img src="assets/uiAssets/images/popup-bg.png" class="popup-bg" />
+      <button class="close-btn close">
+        <img src="assets/uiAssets/images/close-icon.png" width="19" height="17" />
+      </button>
+      <div class="content-error">
+        <p>
+          Maaf, Anda sudah melakukan 3x konversi skor ke Lactoclub poin bulan ini. Coba lagi bulan
+          depan.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- error Page Ends -->
+<!-- congrats Page Starts -->
+<div id="congratsScreen" class="score-screen justify-content-center">
+  <div class="congrats-col col-100">
+    <div
+      class="trophy-top col-100 wow animate__fadeInDown"
+      data-wow-duration="1000ms"
+      data-wow-delay="200ms">
+      <div class="congrats-troph trophy-lose" id="congoLvl1">
+        <!-- <img src="assets/uiAssets/images/score-trophy.png" width="78" height="87" /> -->
+      </div>
+      <div class="congrats-troph trophy-lose" id="congoLvl2">
+        <!-- <img src="assets/uiAssets/images/score-trophy.png" width="78" height="87" /> -->
+      </div>
+      <div class="congrats-troph trophy-lose" id="congoLvl3">
+        <!-- <img src="assets/uiAssets/images/score-trophy.png" width="78" height="87" /> -->
+      </div>
+      <div class="congrats-troph trophy-lose" id="congoLvl4">
+        <!-- <img src="assets/uiAssets/images/score-trophy.png" width="77" height="87" /> -->
+      </div>
+    </div>
+    <div class="score-txt text-center col-100">
+      <img 
+        id="congoTxt"
+        src="assets/uiAssets/images/game-over2.png"
+        class="img-fluid wow animate__heartBeat"
+        data-wow-duration="1000ms"
+        data-wow-delay="400ms" />
+    </div>
+
+    <div class="button-score col-100">
+      <div class="text-center">
+        <img
+           id="congoGif"
+          src="assets/uiAssets/videos/sadwalk.gif"
+          width="147"
+          height="250"
+          class="img-fluid wow animate__bounceInUp"
+          data-wow-duration="1000ms"
+          data-wow-delay="500ms" />
+      </div>
+
+      <!-- <div class="btn-cont wow animate__fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
+        <button class="btn green-gradient-btn modal-button" id="congratsButton2">Lihat Skor</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- A-frame scene -->
+<a-scene
+  lg-splash-screen
+  handle-ui
+  config-targets="targets: Lactogrow_Pack"
+  game
+  landing-page
+  xrextras-loading
+  xrextras-runtime-error
+  xrextras-gesture-detector
+  renderer="antialias: true; colorManagement: true;toneMapping:linear;"
+  xrweb="allowedDevices: any">
+  <a-assets>
+    <video
+      id="laser-video"
+      playsinline
+      muted
+      crossorigin="anonymous"
+      loop="true"
+      src="./assets/optimized/shieldEffect.mp4#t=0.001"></video>
+    <video
+      id="pattern-video"
+      playsinline
+      muted
+      crossorigin="anonymous"
+      loop="true"
+      src="./assets/optimized/powerEffect.mp4#t=0.001"></video>
+    <!-- <a-asset-item id="immuModel" src="assets/2sh.glb"></a-asset-item> -->
+    <img id="roadTex" src="./assets/road_new_small_a.jpg" />
+    <img id="boxTex" src="./assets/textures/Rectangle_1.png" />
+    <img id="shieldTex" src="./assets/optimized/shieldframe.jpg" />
+    <img id="powerTex" src="./assets/optimized/powerframe.jpg" />
+    <!-- point models -->
+    <a-asset-item id="tokenModel" src="assets/Scoring__Rewards.glb"></a-asset-item>
+    <a-asset-item id="focusModel" src="assets/optimized/Focus.glb"></a-asset-item>
+    <a-asset-item id="proteinModel" src="assets/optimized/High_Protein.glb"></a-asset-item>
+    <a-asset-item id="boostModel" src="assets/optimized/Reuteri_Boost.glb"></a-asset-item>
+    <a-asset-item id="shieldModel" src="assets/optimized/Vitamin_Shield.glb"></a-asset-item>
+    <!-- dominoes models -->
+    <a-asset-item id="triDomModel" src="assets/models/domino/3_domino.glb"></a-asset-item>
+    <a-asset-item id="quadDomModel" src="assets/models/domino/4_domino.glb"></a-asset-item>
+    <a-asset-item id="fiveDomModel" src="assets/5_domino_new.glb"></a-asset-item>
+    <!-- enemy models -->
+    <a-asset-item id="virusModel" src="assets/optimized/Yellow_Bact.glb"></a-asset-item>
+    <a-asset-item id="bacteriaModel" src="assets/optimized/Purple_Bact.glb"></a-asset-item>
+    <a-asset-item id="spikesModel" src="assets/models/obstacles/spikes.glb"></a-asset-item>
+    <a-asset-item
+      id="smallSpikesModel"
+      src="assets/models/obstacles/spikes_half.glb"></a-asset-item>
+    <!-- side env models-->
+    <a-asset-item id="lvl1gw" src="assets/optimized/lvl1/Gaint_Wheel.glb"></a-asset-item>
+    <a-asset-item id="lvl1tree" src="assets/optimized/lvl1/Level_01_Trees.glb"></a-asset-item>
+    <a-asset-item id="lvl1tower" src="assets/optimized/lvl1/Tower.glb"></a-asset-item>
+
+    <a-asset-item id="lvl2mount" src="assets/optimized/lvl2/Mountains.glb"></a-asset-item>
+    <a-asset-item id="lvl2pineT" src="assets/optimized/lvl2/Pine_Trees.glb"></a-asset-item>
+    <a-asset-item
+      id="lvl2pinpeTent"
+      src="assets/optimized/lvl2/Pine_Trees_with_tentglb.glb"></a-asset-item>
+    <a-asset-item
+      id="lvl2pinpeHouse"
+      src="assets/optimized/lvl2/Pine_Trees_with_House.glb"></a-asset-item>
+
+    <a-asset-item id="lvl3wmill1" src="assets/optimized/lvl3/One_Windmill.glb"></a-asset-item>
+    <a-asset-item id="lvl3wmill2" src="assets/optimized/lvl3/Two_Windmill.glb"></a-asset-item>
+    <a-asset-item id="lvl3tree1" src="assets/optimized/lvl3/Only_Trees_01.glb"></a-asset-item>
+    <a-asset-item id="lvl3tree2" src="assets/optimized/lvl3/Only_Trees.glb"></a-asset-item>
+
+    <a-asset-item id="lvl4build1" src="assets/optimized/lvl4/Building_01.glb"></a-asset-item>
+    <a-asset-item id="lvl4build2" src="assets/optimized/lvl4/Building_02.glb"></a-asset-item>
+    <a-asset-item
+      id="lvl4build3"
+      src="assets/optimized/lvl4/Building02-without_Hot_Baloon.glb"></a-asset-item>
+
+    <!-- laco & env models -->
+    <a-asset-item id="left1" src="assets/optimized/scene1/Left_01.glb"></a-asset-item>
+    <a-asset-item id="left2" src="assets/optimized/scene1/Left_02.glb"></a-asset-item>
+    <a-asset-item id="left3" src="assets/optimized/scene1/Left_03.glb"></a-asset-item>
+    <a-asset-item id="left4" src="assets/optimized/scene1/Left_04.glb"></a-asset-item>
+    <a-asset-item id="right1" src="assets/optimized/scene1/Right_01.glb"></a-asset-item>
+    <a-asset-item id="right2" src="assets/optimized/scene1/Right_02.glb"></a-asset-item>
+    <a-asset-item id="right3" src="assets/optimized/scene1/Right_03.glb"></a-asset-item>
+    <a-asset-item id="right4" src="assets/optimized/scene1/Right_04.glb"></a-asset-item>
+
+    <a-asset-item id="charModel" src="assets/models/charTest.glb"></a-asset-item>
+
+    <a-mixin id="tokens"></a-mixin>
+    <a-mixin id="elements" element></a-mixin>
+    <a-mixin id="powers" power></a-mixin>
+    <a-mixin id="points" point></a-mixin>
+    <a-mixin id="sideeles" sideele></a-mixin>
+    <a-mixin id="sidelvl2s" sidelvl2></a-mixin>
+    <a-mixin id="sidelvl3s" sidelvl3></a-mixin>
+    <a-mixin id="sidelvl4s" sidelvl4></a-mixin>
+  </a-assets>
+
+  <a-light type="ambient" intensity="0.35"></a-light>
+
+  <a-camera position="0 2 4"></a-camera>
+
+  <!-- <xrextras-named-image-target name="Lactogrow_Pack"> -->
+  <a-entity id="targetWrapper" image-target-comp="name:Lactogrow_Pack">
+    <a-entity
+      id="simpleGame"
+      rotation="0 0 0"
+      no-cull
+      scale=".0001 .0001 .0001"
+      position="0 -0.65 0">
+      <a-entity
+        light="
+        type: directional;
+        intensity: .7;
+        castShadow: true;
+        shadowMapHeight:2048;
+        shadowMapWidth:2048;
+        shadowCameraTop: 10;
+        target: #simpleGame;
+        shadowRadius: 10"
+        xrextras-attach="target: simpleGame; offset: 3 10 1;"
+        shadow>
+      </a-entity>
+      <a-box
+        id="topHider"
+        width="30"
+        height="25"
+        depth="15"
+        position="0 4 -17"
+        xrextras-hider-material></a-box>
+      <!-- <a-box id="botHider" width="20" height="20" depth="20" position="0 0 16.4" xrextras-hider-material ></a-box> -->
+      <a-box
+        id="eleGen"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__elements="mixin: elements; size: 4"></a-box>
+      <a-box
+        id="powerGen"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__powers="mixin: powers; size: 4"></a-box>
+      <a-box
+        id="pointGen"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__points="mixin: points; size: 6"></a-box>
+      <a-box
+        id="sideEleGen"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__sideeles="mixin: sideeles; size: 6"></a-box>
+      <a-box
+        id="sideEleGenlvl2"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__sidelvl2s="mixin: sidelvl2s; size: 8"></a-box>
+      <a-box
+        id="sideEleGenlvl3"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__sidelvl3s="mixin: sidelvl3s; size: 8"></a-box>
+      <a-box
+        id="sideEleGenlvl4"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__sidelvl4s="mixin: sidelvl4s; size: 6"></a-box>
+      <!-- <a-box
+        id="sidertGen"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__sideert="mixin: sideert; size: 3"></a-box> -->
+      <!-- <a-box
+        id="tokeneleGen"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__tokele="mixin: tokele; size: 40"></a-box>
+      <a-box
+        id="sideGen"
+        width="8"
+        height="10"
+        depth="6"
+        position="0 0 -13"
+        material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+        pool__sideele="mixin: sideele; size: 55"></a-box> -->
+
+      <a-box
+        id="roadWay"
+        height="0.1"
+        width="13"
+        depth="25"
+        scale=".8 .5 .9"
+        position="0 0.1 .745"
+        material="shader: standard; height:256; width:512; side: front; src: #roadTex; repeat: 1 3"
+        shadow="receive: true; cast:false">
+      </a-box>
+      <a-entity id="group" scale="12 12 12" position="0 0 0">
+        <!-- <a-box color="#004DA8" position="0.01 -0.04 0.09" depth="1.8" width="1.7" height="0.1"></a-box> -->
+        <!--  <a-box id="char-model"
+      scale=".35 .35 .35"
+      position="0 0.01 0.8"
+      depth="0.5"
+      height="1.6"
+      width="0.5"
+     >
+        <a-box
+          id="targetBox"
+          class="colliderBox"
+          material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+          depth="0.5"
+          height="1.6"
+          width="0.3"
+          position="0 0.8 0.2"></a-box>
+                  <a-sphere
+          id="shieldPower"
+          scale=".0001 .0001 .0001"
+          position="0 .8 0.02"
+          rotation="0 180 0"
+          open-ended="true"
+          auto-play-video="video: #laser-video"
+          material="shader: flat; color:#03f7ff; src: #laser-video; blending:additive; side: double; repeat: .9 .9; transparent:true;">
+          <a-entity
+            gltf-model="#immuModel"
+            scale="1 1 1"
+            position="0 0 0.02"
+            animation-mixer="clip:*"
+            xrextras-spin="speed: 5000"
+            material="shader: flat; blending: additive; side: double; repeat: .9 .9">
+          </a-entity>
+        </a-sphere>
+       </a-box>  -->
+        <a-entity
+          id="char-model"
+          gltf-model="#charModel"
+          class="cantap"
+          rotation="0 0 0"
+          position="0 0.01 0.8"
+          scale=".35 .35 .35"
+          shadow="receive: false"
+          reflections="type: static"
+          animation-mixer="clip:idle"
+          model-relative-opacity="opacity:1">
+          <a-box
+            id="targetBox"
+            class="colliderBox"
+            material="shader:flat; transparent:true; opacity:0; alphaTest: 0.5"
+            depth="0.5"
+            height="1.6"
+            width="0.3"
+            position="0 0.8 0.2"></a-box>
+          <a-sphere
+            id="shieldPower"
+            scale=".0001 .0001 .0001"
+            position="0 .8 0.02"
+            rotation="0 180 0"
+            open-ended="true"
+            auto-play-video="video: #laser-video"
+            material="shader: flat; color:#03f7ff; src: #laser-video; blending:additive; side: double; repeat: .9 .9; transparent:true;">
+            <!-- <a-entity
+              gltf-model="#immuModel"
+              scale="1 1 1"
+              position="0 0 0.02"
+              animation-mixer="clip:*"
+              xrextras-spin="speed: 5000"
+              material="shader: flat; blending: additive; side: double; repeat: .9 .9">
+            </a-entity> -->
+          </a-sphere>
+        </a-entity>
+        <a-entity
+          animation-mixer="clip:*"
+          position="0 0 .224"
+          scale="1.35 1.1 1.4"
+          reflections="type: static"
+          shadow="">
+          <a-entity
+            id="left1"
+            class="env1"
+            gltf-model="#left1"
+            reflections="type: static"
+            shadow="">
+          </a-entity>
+          <a-entity
+            id="right1"
+            class="env1"
+            gltf-model="#right1"
+            reflections="type: static"
+            animation-mixer="clip:*"
+            shadow="">
+          </a-entity>
+          <a-entity
+            id="left2"
+            class="env2"
+            gltf-model="#left2"
+            reflections="type: static"
+            shadow="">
+          </a-entity>
+          <a-entity
+            id="right2"
+            class="env2"
+            gltf-model="#right2"
+            reflections="type: static"
+            animation-mixer="clip:*"
+            shadow="">
+          </a-entity>
+          <a-entity
+            id="left3"
+            class="env3"
+            gltf-model="#left3"
+            reflections="type: static"
+            shadow="">
+          </a-entity>
+          <a-entity
+            id="right3"
+            class="env3"
+            gltf-model="#right3"
+            reflections="type: static"
+            animation-mixer="clip:*"
+            shadow="">
+          </a-entity>
+          <a-entity
+            id="left4"
+            class="env4"
+            gltf-model="#left4"
+            reflections="type: static"
+            shadow="">
+          </a-entity>
+          <a-entity
+            id="right4"
+            class="env4"
+            gltf-model="#right4"
+            reflections="type: static"
+            animation-mixer="clip:*"
+            shadow="">
+          </a-entity>
+        </a-entity>
+        <!-- <a-entity
+          id="enviro-model"
+          gltf-model="#envModel"
+          class="cantap"
+          position="0 0 .224"
+          rotation="0 0 0"
+          scale="1.35 1.1 1.4"
+          shadow="receive: true"
+          animation-mixer="clip:*"
+          reflections="type: static"
+          shadow="">
+        </a-entity> -->
+        <a-box
+          width="1.8"
+          height="0.115"
+          depth="1.8"
+          material="shader: standard; height:256; width:512; side: front; src: #boxTex; repeat: 1 3"
+          position="0 -0.05 0.1"
+          shadow="">
+          <a-box
+            width=".5"
+            height="0.1"
+            depth="1.8"
+            material="shader: standard; height:256; width:512; side: front; src: #boxTex; repeat: 1 3"
+            position="-0.65 0.01 0"></a-box>
+          <a-box
+            width=".5"
+            height="0.1"
+            depth="1.8"
+            material="shader: standard; height:256; width:512; side: front; src: #boxTex; repeat: 1 3"
+            position="0.65 0.01 0"></a-box>
+        </a-box>
+      </a-entity>
+    </a-entity>
+  </a-entity>
+  <!-- </xrextras-named-image-target>  -->
+</a-scene>

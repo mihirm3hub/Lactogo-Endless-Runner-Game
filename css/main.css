@@ -1,0 +1,298 @@
+:root {
+    --dark-color: #101014;
+    --light-color: #f5f5fa;
+  }
+  
+  .hidden {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 0.2s linear;
+  }
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+  }
+  
+  .clickable:active {
+    transform: scale(0.86);
+  }
+  
+  .selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  .absolute-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .center-Obj {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+  
+  /* 8th wall loading screen */
+  #loadImage {
+    display: none;
+  }
+  
+  #loadbg {
+    width: 100vw;
+    height: 100vh;
+  }
+  #loadfg {
+    width: 100vw;
+    height: auto;
+  }
+  #loadLogo {
+    width: 43vw;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #requestingCameraPermissions {
+    color: #090406;
+    background: none;
+    display: none !important;
+  }
+  
+  /* splash screen */
+  .hidden {
+    display: none !important;
+  }
+  #splashimage {
+    z-index: 998;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0358b9;
+  }
+  #start {
+    /*z-index: 999;*/
+    width: 50vw;
+    height: auto;
+    position: absolute;
+    bottom: 5vh;
+    left: 25vw;
+    background-color: #ad50ff;
+    border: 0.2em solid white;
+    text-align: center;
+    color: #fff;
+    border-radius: 100px;
+  }
+  h2 {
+    font-size: 1.3em;
+    text-align: center;
+    font-family: monospace;
+  }
+  #lg-poweredby {
+    width: 35vw;
+    max-width: 200px;
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    filter: invert(0);
+    z-index: 5;
+  } 
+  /* 
+  #cl-wrapper {
+    z-index: 30;
+    background-size: 400% 400%;
+    background: white;
+  }
+  
+  #cl-logo {
+    width: 60vw;
+    max-width: 400px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    opacity: 1;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+  
+  #cl-loader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(0);
+  }
+  
+  #cl-poweredby {
+    width: 35vw;
+    max-width: 200px;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    filter: invert(0);
+  } */
+  
+  /* #goBtn {
+    position: absolute;
+    bottom: 10%;
+    width: 30vw;
+    height: auto;
+    background-color: var(--dark-color);
+    border: 0.15em solid var(--light-color);
+    text-align: center;
+    color: var(--light-color);
+    border-radius: 100px;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    text-transform: uppercase;
+    font-family: monospace;
+    padding: 5px;
+    z-index: 3;
+  } */
+  .spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-top: 3px solid #0063ad;
+    border-right: 3px solid transparent;
+    border-radius: 50%;
+    animation: rotation 0.8s linear infinite;
+  }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .progressBar {
+    width: 120px;
+    height: 22px;
+    border-radius: 20px;
+    color: #e16545;
+    border: 2px solid;
+    position: relative;
+    top: 95px;
+    /* right: 20px; */
+  }
+  .progressBar::before {
+    content: '';
+    position: absolute;
+    margin: 2px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: p6 3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes p6 {
+    100% {
+      inset: 0;
+    }
+  }
+  
+  .dots {
+    width: 55px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+    background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+    background-size: calc(100% / 3) 50%;
+    animation: d3 1s infinite linear;
+    filter: invert(1);
+  }
+  @keyframes d3 {
+    20% {
+      background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+    40% {
+      background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+    60% {
+      background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+    80% {
+      background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+  }
+  
+  .fade-in {
+    animation: fade-in 0.25s linear forwards;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fade-out {
+    animation: fade-out 0.25s linear forwards;
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #controller {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .controlBtn {
+    border-radius: 50%;
+    background: white;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .scoreUI {
+    position: absolute;
+    top: 0;
+    margin: 8px;
+    padding: 5px;
+    font-family: monospace;
+    z-index: 2;
+    color: white;
+    font-size: 1.4em;
+    width: 200px;
+  }
+  
+  #scnImg {
+    width: 35vh;
+    margin-top: 25%;
+  }
+  

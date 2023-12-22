@@ -1,0 +1,91 @@
+<!-- Copyright (c) 2022 8th Wall, Inc. -->
+<!-- head.html is optional; elements will be added to your html head before app.js is loaded. -->
+
+<!-- Use "8thwall:" meta tags to hook into 8th Wall's build process and developer tools. -->
+<meta name="8thwall:renderer" content="aframe:1.4.1" />
+<meta name="8thwall:package" content="@8thwall.xrextras" />
+<meta name="8thwall:package" content="@8thwall.landing-page" />
+<meta property="og:title" content="Nestle Lactogo" />
+<meta property="og:description" content="Nestle Lactogo" />
+<meta property="og:image" content="https://i.imgur.com/CGvpgzt.png" />
+<meta property="og:image:width" content="1200" />
+<!-- Adjust to your image's actual width -->
+<meta property="og:image:height" content="630" />
+<!-- Adjust to your image's actual height -->
+<meta property="og:image:alt" content="Nestle Lactogo" />
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="Nestle Lactogo" />
+<meta name="twitter:title" content="Nestle Lactogo" />
+<meta name="twitter:description" content="Nestle Lactogo" />
+<meta name="twitter:image" content="https://i.imgur.com/CGvpgzt.png" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- Other external scripts and meta tags can also be added. -->
+<script src="//cdn.8thwall.com/web/aframe/aframe-extras-6.1.1.min.js"></script>
+<script src="https://unpkg.com/aframe-aabb-collider-component@3.1.0/dist/aframe-aabb-collider-component.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+
+<script src="https://gftruj.github.io/webzamples/aframe/models/components/model-relative-opacity.js"></script>
+<script src="https://unpkg.com/aframe-fps-counter-component/dist/aframe-fps-counter-component.min.js"></script>
+
+<!-- Other external scripts and meta tags can also be added. -->
+<link
+  rel="stylesheet"
+  crossorigin="anonymous"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+  integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>
+
+<script
+  crossorigin="anonymous"
+  defer
+  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+  integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>
+<script
+  crossorigin="anonymous"
+  defer
+  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+
+<script
+  crossorigin="anonymous"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-TQB3ZZ7M7F"></script>
+
+<!-- Google tag (gtag.js) -->
+<script
+  crossorigin="anonymous"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-VN8YF14780"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-TQB3ZZ7M7F');
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-M3V5DDDQ');
+</script>
+<!-- End Google Tag Manager -->
